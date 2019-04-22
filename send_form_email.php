@@ -31,6 +31,8 @@ try {
     if(empty($_POST['first_name'])  || empty($_POST['email']) || empty($_POST['message']))
     {
         $errors = "\n Error: all fields are required";
+    } elseif(isset($_POST['url'])&&strlen($_POST['url'])>0 ) {
+        $errors = "";
     }
 
     if( empty($errors))
@@ -55,6 +57,7 @@ try {
         } else {
             echo 'Message has been sent.';
         }
+        echo $errors;
     }
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

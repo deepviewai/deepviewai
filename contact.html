@@ -122,17 +122,17 @@
                                 <div class="row form-group">
                                     <div class="col-md-6">
                                         <label for="first_name">Nome</label>
-                                        <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Seu nome">
+                                        <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Seu nome" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="last_name">Sobrenome</label>
-                                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Seu sobrenome">
+                                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Seu sobrenome" required>
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="email">Email</label>
-                                        <input type="text" name="email" id="email" class="form-control" placeholder="Seu endereço de email">
+                                        <input type="text" name="email" id="email" class="form-control" placeholder="Seu endereço de email" required>
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -144,8 +144,11 @@
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="message">Mensagem</label>
-                                        <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Sua mensagem"></textarea>
+                                        <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Sua mensagem" required></textarea>
                                     </div>
+                                </div>
+                                <div class="naoexibir">
+                                	<p>Não preencher:<input type="text" name="url" value=""></p>
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" value="Enviar mensagem" class="btn btn-lg btn-primary">
