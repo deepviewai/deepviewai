@@ -55,7 +55,7 @@ try {
             echo 'Message was not sent.';
             echo 'Mailer error: ' . $mail->ErrorInfo;
         } else {
-            echo 'Message has been sent.';
+            header('Location: contact-form-thank-you.html#begin');
         }
         echo $errors;
     }
