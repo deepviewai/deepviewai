@@ -118,27 +118,27 @@
                         <div class="col-md-1"></div>
                         <div class="col-md-6 animate-box">
                             <h3>Perguntas ou comentários?</h3>
-                            <form>
+                            <form name="contactform" method="post" action="send_form_email.php">
                                 <div class="row form-group">
                                     <div class="col-md-6">
-                                        <label for="fname">Nome</label>
-                                        <input type="text" id="fname" class="form-control" placeholder="Seu nome">
+                                        <label for="first_name">Nome</label>
+                                        <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Seu nome">
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="lname">Sobrenome</label>
-                                        <input type="text" id="lname" class="form-control" placeholder="Seu sobrenome">
+                                        <label for="last_name">Sobrenome</label>
+                                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Seu sobrenome">
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="email">Email</label>
-                                        <input type="text" id="email" class="form-control" placeholder="Seu enderelo de email">
+                                        <input type="text" name="email" id="email" class="form-control" placeholder="Seu endereço de email">
                                     </div>
                                 </div>
                                 <div class="row form-group">
                                     <div class="col-md-12">
                                         <label for="subject">Assunto</label>
-                                        <input type="text" id="subject" class="form-control" placeholder="O assunto desta mensagem">
+                                        <input type="text" name="subject" id="subject" class="form-control" placeholder="O assunto desta mensagem">
                                     </div>
                                 </div>
                                 <div class="row form-group">
